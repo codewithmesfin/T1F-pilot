@@ -9,6 +9,9 @@ There are two main steps to setting up a lazy-loaded feature module:
 ### 2. Configure the routes.
 
 ## Setup 
-Run ` ng new 'component-name' --routing `  
+Run ` ng new 'component-name' --routing ` 
+
+## Create Feature module with route option
+Run ` ng generate module 'module-name' --route 'route-name' --module 'parent-module'`
 
 ## Development server
