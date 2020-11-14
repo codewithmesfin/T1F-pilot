@@ -1,0 +1,41 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <img src="/assets/logo.png" alt="" height="30px">
+
+        <h1 class="toolbar-title">App Name</h1>
+        <span class="toolbar-spacer"></span>
+        <div>
+            <a mat-button> Messages</a>
+            <a mat-button> Notifs</a>
+            <a mat-flat-button mat-mini-fab color="secondary">
+                <img src="/assets/default.jpeg" alt="" height="20px">
+            </a>
+        </div>
+    </mat-toolbar-row>
+
+</mat-toolbar>
+<mat-sidenav-container>
+
+    <mat-sidenav #drawer class="sidenav" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+        <mat-nav-list>
+            <a mat-list-item [routerLink]="'/app/dashboard'"> Dashboard</a>
+            <a mat-list-item [routerLink]="'/app/talents'"> Talents </a>
+            <a mat-list-item [routerLink]="'/app/projects'"> Projects </a>
+            <a mat-list-item [routerLink]="'/app/clients'"> Clients </a>
+            <a mat-list-item [routerLink]="'/app/invoices'">Invoices</a>
+            <a mat-list-item [routerLink]="'/app/team'">Team</a>
+        </mat-nav-list>
+        <mat-nav-list class="inner-content">
+            <a mat-list-item>Setting</a>
+            <a mat-list-item> Password & Security</a>
+            <a mat-list-item> Logout</a>
+        </mat-nav-list>
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div style="height: 88vh;">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

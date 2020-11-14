@@ -1,0 +1,30 @@
+
+/* Structure */
+.talents {
+  width: 95%;
+  margin: 30px auto;
+}
+table{
+    width: 100%;
+}
+.right-btn{
+    background-color:black;
+    color: white;
+    margin: 0px 5px;
+}
+.mat-grid-list {
+    margin: 5px 0px !important;
+}
+.btn-spacer {
+  flex: 1 1 auto;
+}
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+.mat-tab-group {
+  margin-bottom: 28px;
+}
+::ng-deep .mat-ink-bar {
+  background-color:black !important;
+}

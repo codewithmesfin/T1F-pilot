@@ -1,0 +1,23 @@
+.login-card {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 30vh;
+}
+.login-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.login-full-width {
+  width: 100%;
+}
+.login-btn{
+  margin: auto;
+  display: block;
+  width: 400px;
+  padding: 5px; 
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.74);
+  color: white;
+}
