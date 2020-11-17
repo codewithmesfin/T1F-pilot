@@ -3,6 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { PageLayoutComponent } from './page-layout.component';
 
+/*define lazy loading routes
+for dynamically loading their components.
+*/
 const routes: Routes = [{
   path: '',
   component: PageLayoutComponent,
