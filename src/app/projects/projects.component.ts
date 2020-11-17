@@ -101,6 +101,7 @@ export class ProjectsComponent {
   ];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
+  //implement angular material search field.
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
