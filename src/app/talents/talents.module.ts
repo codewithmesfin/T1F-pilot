@@ -11,6 +11,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   declarations: [TalentsComponent],
@@ -22,7 +24,9 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatInputModule,
     MatGridListModule,
     MatButtonModule,
-    MatTabsModule
+    MatTabsModule,
+    MatCheckboxModule,
+    MatRadioModule
   ]
 })
 export class TalentsModule { }

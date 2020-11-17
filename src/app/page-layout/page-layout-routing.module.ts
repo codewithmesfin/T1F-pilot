@@ -17,6 +17,8 @@ const routes: Routes = [{
     },
     { path: 'dashboard', loadChildren: () => import('../dashboard/dashboard.module').then(m => m.DashboardModule) },
     { path: 'talents', loadChildren: () => import('../talents/talents.module').then(m => m.TalentsModule) },
+    { path: 'active-project', loadChildren: () => import('../projects/active-project/active-project.module').then(m => m.ActiveProjectModule) },
+    { path: 'talent-detail', loadChildren: () => import('../talents/talent-detail/talent-detail.module').then(m => m.TalentDetailModule) },
   ]
 }];
 

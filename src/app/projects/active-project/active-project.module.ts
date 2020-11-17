@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ProjectsRoutingModule } from './projects-routing.module';
-import { ProjectsComponent } from './projects.component';
+import { ActiveProjectRoutingModule } from './active-project-routing.module';
+import { ActiveProjectComponent } from './active-project.component';
+
 
 
 //import angular material components
@@ -12,23 +13,18 @@ import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatRadioModule } from '@angular/material/radio';
-
 
 @NgModule({
-  declarations: [ProjectsComponent],
+  declarations: [ActiveProjectComponent],
   imports: [
     CommonModule,
-    ProjectsRoutingModule,
+    ActiveProjectRoutingModule,
     MatTableModule,
     MatFormFieldModule,
     MatInputModule,
     MatGridListModule,
     MatButtonModule,
-    MatTabsModule,
-    MatCheckboxModule,
-    MatRadioModule
+    MatTabsModule
   ]
 })
-export class ProjectsModule { }
+export class ActiveProjectModule { }

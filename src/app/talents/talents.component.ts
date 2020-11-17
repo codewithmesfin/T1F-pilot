@@ -71,8 +71,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./talents.component.css']
 })
 export class TalentsComponent {
-
-
   displayedColumns: string[] = [
     'idCode', 'talentName', 'professions', 'contactInfo',
     'project', 'status', 'active', 'dateAdded'

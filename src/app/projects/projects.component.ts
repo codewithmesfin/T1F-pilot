@@ -4,60 +4,77 @@ import { MatTableDataSource } from '@angular/material/table';
 
 export interface PeriodicElement {
   idCode: number;
-  talentName: string;
-  professions: string;
-  contactInfo: string;
+  projectTitle: string;
+  projectName: string;
+  projectCategory: string;
+  projectSubcategory: string;
   project: string;
-  status: string
-  active: string
-  dateAdded: string
+  projectStatus: string;
+  contactInfo: string;
+  status: string;
+  dateAdded: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
   {
-    idCode: 1, talentName: 'lorem', professions: 'graphics design',
-    contactInfo: 'mesfin@gmail.com', project: '12',
-    status: 'Shortlisted 1', active: 'active', dateAdded: new Date().toISOString().slice(0, 10)
-  },
-  {
-    idCode: 2, talentName: 'ipsum', professions: 'software engineer',
+    idCode: 1,
+    projectTitle: 'Lorem ipsum',
+    projectName: "Lorem ipsum",
+    projectCategory: 'Lorem ipsum',
+    projectSubcategory: "Lorem ipsum",
     contactInfo: 'mesfin@gmail.com',
-    project: '3',
-    status: 'Hired', active: 'inactive', dateAdded: new Date().toISOString().slice(0, 10)
+    project: '12',
+    projectStatus: "Lorem ipsum",
+    status: 'Shortlisted 1',
+    dateAdded: new Date().toISOString().slice(0, 10)
   },
   {
-    idCode: 3, talentName: 'lorem', professions: 'graphics design',
-    contactInfo: 'mesfin@gmail.com', project: '12',
-    status: 'Shortlisted 1', active: 'active', dateAdded: new Date().toISOString().slice(0, 10)
-  },
-  {
-    idCode: 4, talentName: 'ipsum', professions: 'software engineer',
+    idCode: 2,
+    projectTitle: 'Lorem ipsum',
+    projectName: "Lorem ipsum",
+    projectCategory: 'Lorem ipsum',
+    projectSubcategory: "Lorem ipsum",
     contactInfo: 'mesfin@gmail.com',
-    project: '3',
-    status: 'Hired', active: 'inactive', dateAdded: new Date().toISOString().slice(0, 10)
+    project: '2',
+    projectStatus: "Lorem ipsum",
+    status: 'Shortlisted 1',
+    dateAdded: new Date().toISOString().slice(0, 10)
   },
   {
-    idCode: 5, talentName: 'lorem', professions: 'graphics design',
-    contactInfo: 'mesfin@gmail.com', project: '12',
-    status: 'Shortlisted 1', active: 'active', dateAdded: new Date().toISOString().slice(0, 10)
-  },
-  {
-    idCode: 6, talentName: 'ipsum', professions: 'software engineer',
+    idCode: 3,
+    projectTitle: 'Lorem ipsum',
+    projectName: "Lorem ipsum",
+    projectCategory: 'Lorem ipsum',
+    projectSubcategory: "Lorem ipsum",
     contactInfo: 'mesfin@gmail.com',
-    project: '3',
-    status: 'Hired', active: 'inactive', dateAdded: new Date().toISOString().slice(0, 10)
-  },
-
-  {
-    idCode: 7, talentName: 'lorem', professions: 'graphics design',
-    contactInfo: 'mesfin@gmail.com', project: '12',
-    status: 'Shortlisted 1', active: 'active', dateAdded: new Date().toISOString().slice(0, 10)
+    project: '9',
+    projectStatus: "Lorem ipsum",
+    status: 'Shortlisted 1',
+    dateAdded: new Date().toISOString().slice(0, 10)
   },
   {
-    idCode: 8, talentName: 'ipsum', professions: 'software engineer',
+    idCode: 4,
+    projectTitle: 'Lorem ipsum',
+    projectName: "Lorem ipsum",
+    projectCategory: 'Lorem ipsum',
+    projectSubcategory: "Lorem ipsum",
     contactInfo: 'mesfin@gmail.com',
-    project: '3',
-    status: 'Hired', active: 'inactive', dateAdded: new Date().toISOString().slice(0, 10)
+    project: '21',
+    projectStatus: "Lorem ipsum",
+    status: 'Shortlisted 1',
+    dateAdded: new Date().toISOString().slice(0, 10)
+  },
+  {
+    idCode: 5,
+    projectTitle: 'Lorem ipsum',
+    projectName: "Lorem ipsum",
+    projectCategory: 'Lorem ipsum',
+    projectSubcategory: "Lorem ipsum",
+    contactInfo: 'mesfin@gmail.com',
+    project: '43',
+    projectStatus: "Lorem ipsum",
+    status: 'Shortlisted 1',
+    dateAdded: new Date().toISOString().slice(0, 10)
   },
 ];
 
@@ -71,8 +88,16 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class ProjectsComponent {
   displayedColumns: string[] = [
-    'idCode', 'talentName', 'professions', 'contactInfo',
-    'project', 'status', 'active', 'dateAdded'
+    'idCode',
+    'projectTitle',
+    'projectName',
+    'projectCategory',
+    'projectSubcategory',
+    'contactInfo',
+    'project',
+    'projectStatus',
+    'status',
+    'dateAdded'
   ];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 

@@ -1,0 +1,11 @@
+.content{
+    width: 70vh;
+    margin-left: 30px;
+}
+.att .row{
+  background-color:white !important;
+}
+.col-empty{
+  background-color: grey;
+  height: 100%;
+}

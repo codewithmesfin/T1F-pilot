@@ -1,21 +1,8 @@
-<mat-toolbar>
-    <mat-toolbar-row>
-        <img src="/assets/logo.png" alt="" height="30px">
+<!-- register toolbar components for view  -->
+<app-toolbar></app-toolbar>
 
-        <h1 class="toolbar-title">App Name</h1>
-        <span class="toolbar-spacer"></span>
-        <div>
-            <a mat-button> Messages</a>
-            <a mat-button> Notifs</a>
-            <a mat-flat-button mat-mini-fab color="secondary">
-                <img src="/assets/default.jpeg" alt="" height="20px">
-            </a>
-        </div>
-    </mat-toolbar-row>
-
-</mat-toolbar>
+<!-- define left sidebar -->
 <mat-sidenav-container>
-
     <mat-sidenav #drawer class="sidenav" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
         [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
         <mat-nav-list>
@@ -33,7 +20,9 @@
         </mat-nav-list>
 
     </mat-sidenav>
+
     <mat-sidenav-content>
+        <!-- register router view for dynamically loaded lazy load components  -->
         <div style="height: 88vh;">
             <router-outlet></router-outlet>
         </div>

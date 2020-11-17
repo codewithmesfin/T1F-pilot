@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+
+/* import rxjs and observers cdk, this will 
+help us to toggle the side bar. 
+Currently we do have a static sidebar.
+*/
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
